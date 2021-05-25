@@ -1,0 +1,5 @@
+
+.icon-clock:before { content: '\e800'; } /* '' */
+.icon-star-empty:before { content: '\e801'; } /* '' */
+.icon-heart-empty:before { content: '\e802'; } /* '' */
+.icon-suitcase:before { content: '\f0f2'; } /* '' */

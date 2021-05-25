@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+nav{
+    display: flex;
+    margin: 0 10rem;
+    padding: 3rem;
+}
+.img img{
+    width: 30px;
+}
+
+nav ul{
+    list-style-type: none;
+    width: 100%;
+    font-weight: 600;
+    font-size: 15px;
+    justify-content: flex-end;
+    display: flex;
+}
+nav ul li a{
+    margin-left: 20px;
+    margin-right: 20px;
+    color:black;
+}
+
+.main{
+    position: relative;
+    height: 70vh;
+    background-image: url(img/baner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.text{
+    float: right;
+    margin: 0 10rem;
+    width: 600px;
+    margin-top:90px;
+}
+.text2{
+    font-size: 4vh;
+    margin-top: 2rem;
+    padding-right: 15%;
+    letter-spacing: 2px;
+    color:black;
+}
+.text3{
+    color:rgb(85, 87, 87);
+    margin-top: 20px;
+    width: 450px;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+
+.btn{
+    margin-top: 40px;
+    padding: 15px 30px 15px 30px;
+    background-color: rgb(0, 200, 200);
+    border: none;
+}
+.btn a{
+    color: white;
+    letter-spacing: 2px;
+}
+
+.about{
+    padding: 50px;
+    height: 30hv;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.abouttext{
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.abouth{
+    font-size: 4vh;
+    letter-spacing: 2px;
+    
+}
+.aboutp{
+    color: rgb(85, 87, 87);
+    letter-spacing: 2px;
+    margin-top: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 20px;
+}
+.skills{
+    height: 55vh;
+    display: flex;
+    background-image: url(img/skills_bg.png);   
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.skills_left{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.skills_bars{
+    padding: 100px 0 0 100px;
+}
+.skills_bars h2{
+    font-size: 3vh;
+    font-weight: 1200;
+    position: relative;
+    letter-spacing: 2px;
+}
+.skills_bars ul{
+    margin-top: 50px;
+}
+.bars{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.bars li{
+    height: 35px;
+    margin-bottom: 50px;
+}
+.bars li b{
+    position: relative;
+    top: -70%;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+.bar1{
+    height: 5px;
+    margin: 0;
+    position: absolute;
+    background-color: rgb(85, 87, 87);
+}
+.bar{
+    height: 5px;
+    margin: 0;
+    position: absolute;
+    width: 25%;
+    animation: bar 2s ease-out;
+}
+
+.line{
+    width: 15%;
+    height: 5px;
+    position: absolute;
+    background-color: rgb(0, 200, 200);
+}
+.line2{
+    width: 20%;
+    height: 5px;
+    position: absolute;
+    background-color: rgb(0, 200, 200);
+}
+
+.line3{
+    width: 10%;
+    height: 5px;
+    position: absolute;
+    background-color: rgb(0, 200, 200);
+}
+
+.numbers{
+    height: 30vh;
+    background-color: rgb(0, 200, 200);
+}
+
+.container{
+    padding: 50px;
+    height: 100%;
+    display: flex;
+}
+.box{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box i {
+    font-size: 50px;
+}
+.box_text{
+    margin-left: 20px;
+    color: white;
+    letter-spacing: 2px;
+}
+.work {
+    display: flex;
+    flex-wrap: wrap;
+}
+.work div{
+    position: relative;
+    width: 25%;
+    overflow: hidden;
+    height: 30vh;
+    text-align: center;
+}
+.work div img{
+    width: 50%;
+    transition: width .3s;
+}
+.bg{
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity .3s;
+    font-size: 20px;
+    text-align: center;
+    background-image: url(img/eye.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: center;
+}
+.work div:hover .bg{
+    opacity: 1;
+}
+.load_more{
+    width: 100%;
+    height: 80px;
+    padding: 30px;
+    background-color: #cfcfcf;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+}
+.load_more p{
+    position: relative;
+    padding: 5px;
+}
+.work_process{
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.process_text{
+    font-size: 25px;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.process_text h1{
+    
+    font-weight: 1200;
+}
+.process_text p{
+    font-size: 15px;
+    padding-top:20px ;
+    width: 30%;
+    margin: auto;
+}
+.video{
+    padding-bottom:150px ;
+}
