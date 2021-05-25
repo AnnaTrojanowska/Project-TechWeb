@@ -62,6 +62,7 @@ nav ul li a{
     padding: 15px 30px 15px 30px;
     background-color: rgb(0, 200, 200);
     border: none;
+    color: white;
 }
 .btn a{
     color: white;
@@ -242,7 +243,7 @@ nav ul li a{
     padding: 5px;
 }
 .work_process{
-    height: 80vh;
+    height: 130vh;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -265,4 +266,166 @@ nav ul li a{
 }
 .video{
     padding-bottom:150px ;
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#ddd;
+}
+.services div{
+    position: relative;
+    width: 25%;
+    overflow: hidden;
+    height: 30vh;
+    text-align: center;
+    padding: 20px;
+
+    position: relative;
+
+    align-items: center;
+    justify-content: center;
+}
+.services div i {
+    font-size: 50px;
+    margin: 40px 10px 10px 10px;
+    color: rgb(85, 87, 87);
+}
+.services div h3{
+    margin: 20px 20px 10px 20px;
+}
+.services div p{
+    margin: 10px 50px 50px 50px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(85, 87, 87);
+}
+
+.testimonials{
+    height: 70vh;
+    display: flex;
+    background-color: rgb(0, 200, 200);
+}
+
+
+
+
+
+
+
+
+
+
+.clients{
+    display: flex;
+}
+.clients div{
+    position: relative;
+    padding: 30px;
+    width: 20%;
+    overflow: hidden;
+    height: 30vh;
+    text-align: center;
+    padding: 20px;
+
+    
+}
+.one{
+    background-image: url(img/1.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+.two{
+    background-image: url(img/2.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+.three{
+    background-image: url(img/3.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+.four{
+    background-image: url(img/4.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+.five{
+    background-image: url(img/5.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+}
+.need-a-project{
+    height: 100vh;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.need-a-project div{
+    padding: 50px;
+}
+.need-a-project h1{
+    font-size: 40px;
+    margin: 30px 30px 20px 30px;
+}
+.need-a-project p{
+    width: 60%;
+    margin: auto;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.need-a-project input{
+    border: none;
+    padding: 20px;
+    margin: 10px;
+}
+
+.form_name{
+    width: 400px;
+}
+.form_email{
+    width: 400px;
+}
+.form_title{
+    width: 95%;
+}
+.form_comment{
+    width: 95%;
+    height: 300px;
+}
+
+.need-a-project button{
+    margin-top: 0;
+}
+.footer{
+    color: #ddd;
+    height: 30vh;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    width: 100%;
+}
+.footer div{
+    padding: 100px;
+    
+    width: 25%;
+    justify-content: center;
+}
+.footer h4{
+    padding: 0 20px 20px 0;
+    color: white;
+}
+.footer p{
+    padding: 10px 10px 10px 0;
+}
+.footer ul{
+    list-style: none;
+}
+.ul_count{
+    column-count: 2;
+}
+.footer ul li{
+    padding: 5px;
 }
