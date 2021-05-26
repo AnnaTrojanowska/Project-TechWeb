@@ -14,18 +14,22 @@ nav{
     width: 30px;
 }
 
-nav ul{
+.nav-links{
     list-style-type: none;
-    width: 100%;
+    width: 50%;
+    margin-left: auto;
     font-weight: 600;
     font-size: 15px;
     justify-content: flex-end;
     display: flex;
 }
-nav ul li a{
+.nav-links a{
     margin-left: 20px;
     margin-right: 20px;
     color:black;
+}
+.nav-links a:hover{
+    color:rgb(0, 150, 150);
 }
 
 .main{
@@ -264,9 +268,8 @@ nav ul li a{
     width: 30%;
     margin: auto;
 }
-.video{
-    padding-bottom:150px ;
-}
+
+
 .services{
     display: flex;
     flex-wrap: wrap;
@@ -365,6 +368,9 @@ nav ul li a{
     justify-content: center;
     text-align: center;
 }
+.need_div{
+    width: 1200px;
+}
 .need-a-project div{
     padding: 50px;
 }
@@ -382,7 +388,10 @@ nav ul li a{
     padding: 20px;
     margin: 10px;
 }
-
+.form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 .form_name{
     width: 400px;
 }
@@ -390,11 +399,10 @@ nav ul li a{
     width: 400px;
 }
 .form_title{
-    width: 95%;
+    grid-column: span 2;
 }
 .form_comment{
-    width: 95%;
-    height: 300px;
+    grid-column: span 2;
 }
 
 .need-a-project button{
@@ -428,4 +436,59 @@ nav ul li a{
 }
 .footer ul li{
     padding: 5px;
+}
+.hamburger{
+    display: none;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 1350px) {
+ 
+    .nav-links a{
+        display: none;
+    }
+    .nav-links a.icon {
+        float: right;
+        display: block;
+      }
+    .nav-links.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .nav-links.responsive {
+        position: relative;
+        flex-wrap: wrap;
+        z-index: 1;
+        width: 10%;
+        background-color: gray;
+        width: auto;
+
+    }
+  
+    
+    .hamburger.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+    .hamburger{
+        position: absolute;
+        display: block!important;
+        width: 70%;
+    }
+    nav{
+        margin:0 4rem;
+    }
+    .pe-7s-menu{
+        display: block!important;
+        float: right;
+        color: black;
+        margin: 0 10px;
+    }
+
+    
+    
+    
 }

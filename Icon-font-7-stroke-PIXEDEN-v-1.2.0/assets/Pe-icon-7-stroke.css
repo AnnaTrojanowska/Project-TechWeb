@@ -408,6 +408,7 @@
 	content: "\e635";
 }
 .pe-7s-menu:before {
+	float: right;
 	content: "\e636";
 }
 .pe-7s-map:before {

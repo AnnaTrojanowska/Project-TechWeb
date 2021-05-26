@@ -15,12 +15,15 @@
     <title>Document</title>
 </head>
 <body>
+    <script src="app.js"></script>
+   
     <section class="main">
         
         <header>
             <nav>
                 <div class="img"><img src="img/logo.png" alt=""></div>
-                <ul>
+                
+                <ul class="nav-links" id="topnav">
                     <li><a href="#Home" class="active">HOME</a></li>
                     <li><a href="#About" >ABOUT</a></li>
                     <li><a href="#Work">WORK</a></li>
@@ -30,7 +33,8 @@
                     <li><a href="#Contact">CONTACT</a></li>
                   
                 </ul> 
-                <div class="hide resp"><i class="fas fa-bars"></i> </div>
+                
+                <div class="hamburger"><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="pe-7s-menu"></i> </a></div>
                 
             </nav>
         </header>
@@ -167,6 +171,7 @@
          </div>
          <div class="video">
              <div class="video_player">
+                 
                  <video autoplay muted controls max-width="1500px" loop >
                      <source src="img/video.mp4" type="video/mp4">
                  </video>
@@ -239,12 +244,12 @@
     </section>
     <section class="need-a-project">
         <a name="Contact"></a>
-        <div>
+        <div class="need_div">
             <h1>Need a project?</h1>
             <p>Let us know what you're looking for in an agency. We'll take a look and see if this could be the start of something beautiful</p>
             
         
-            <div>
+            <div class="form">
                 <form action="#">
                     <input type="text" value="Your Name" class="form_name">
                     <input type="text" value="Your Email" class="form_email">
