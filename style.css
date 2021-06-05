@@ -5,10 +5,17 @@
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
 }
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 nav{
     display: flex;
     margin: 0 10rem;
     padding: 3rem;
+    position:relative;
 }
 .img img{
     width: 30px;
@@ -34,18 +41,41 @@ nav{
 
 .main{
     position: relative;
-    height: 70vh;
     background-image: url(img/baner.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .text{
-    float: right;
-    margin: 0 10rem;
-    width: 600px;
-    margin-top:90px;
+    display:flex;
+    justify-content: flex-end;
 }
+
+@media all and (max-width:600px){
+    .text{
+        justify-content: center;
+        text-align: center;
+    }
+    .text2{
+        padding: 0!important;;
+    }
+}
+
+.text-wrapper{
+    margin: 90px 10rem 30px 10rem;
+    width:600px;
+}
+
+@media all and (max-width:700px){
+    .text-wrapper{
+        margin: 30px;
+        max-width: 120%;
+    }
+    .btn{
+        margin: auto;
+    }
+}
+
 .text2{
     font-size: 4vh;
     margin-top: 2rem;
@@ -103,6 +133,7 @@ nav{
 .skills{
     height: 55vh;
     display: flex;
+    background-color: rgb(213, 213, 213);
     background-image: url(img/skills_bg.png);   
     background-repeat: no-repeat;
     background-size: 100%;
@@ -115,6 +146,17 @@ nav{
 }
 .skills_bars{
     padding: 100px 0 0 100px;
+
+}
+@media all and (max-width:800px){
+    .skills_bars{
+        padding: 60px 0 0 60px;
+    }
+}
+@media all and (max-width:700px){
+    .skills_bars{
+        padding: 30px 0 0 30px;
+    }
 }
 .skills_bars h2{
     font-size: 3vh;
@@ -183,6 +225,30 @@ nav{
     padding: 50px;
     height: 100%;
     display: flex;
+}
+@media all and (max-width: 900px){
+    .container{
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    .box{
+        font-size: 10px;
+    }
+    .box i{
+        font-size: 15px!important;
+    }
+}
+@media all and (max-width: 700px){
+    .container{
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    .box{
+        font-size: 7px!important;
+    }
+    .box i{
+        font-size: 20px!important;
+    }
 }
 .box{
     width: 25%;
@@ -388,15 +454,9 @@ nav{
     padding: 20px;
     margin: 10px;
 }
-.form{
+.form form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
-.form_name{
-    width: 400px;
-}
-.form_email{
-    width: 400px;
 }
 .form_title{
     grid-column: span 2;
@@ -440,6 +500,7 @@ nav{
 .hamburger{
     display: none;
     font-size: 30px;
+    right:0;
 }
 
 @media only screen and (max-width: 1350px) {
