@@ -15,7 +15,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="app.js"></script>
+   
    
     <section class="main">
         
@@ -172,16 +172,17 @@
          </p>
          </div>
          <div class="video">
-             <div class="video_player">
+             <div class="video_player video-controls hidden" id="video-controls">
+                <video controls max-width="1500px" id="myVid" class="video">
+                    <source src="img/video.mp4" type="video/mp4">
+                </video>
                 <button data-title="Play (k)" id="play">
                     <svg class="playback-icons">
                       <use href="#play-icon"></use>
                       <use class="hidden" href="#pause"></use>
                     </svg>
                   </button>
-                 <video autoplay muted controls max-width="1500px" loop >
-                     <source src="img/video.mp4" type="video/mp4">
-                 </video>
+                 
                  
              </div>
          </div>
@@ -300,6 +301,6 @@
             </ul>
         </div>
     </section>
-
+    <script src="app.js"></script>
 </body>
 </html>

@@ -9,6 +9,7 @@ function myFunction() {
 
   const playButton = document.getElementById('play');
   function togglePlay() {
+    var video = document.getElementById('myVid');
     if (video.paused || video.ended) {
       video.play();
     } else {
