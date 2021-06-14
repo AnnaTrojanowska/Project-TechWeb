@@ -173,10 +173,16 @@
          </div>
          <div class="video">
              <div class="video_player">
-                 
+                <button data-title="Play (k)" id="play">
+                    <svg class="playback-icons">
+                      <use href="#play-icon"></use>
+                      <use class="hidden" href="#pause"></use>
+                    </svg>
+                  </button>
                  <video autoplay muted controls max-width="1500px" loop >
                      <source src="img/video.mp4" type="video/mp4">
                  </video>
+                 
              </div>
          </div>
     </section>
