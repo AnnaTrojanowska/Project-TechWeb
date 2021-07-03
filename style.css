@@ -44,6 +44,7 @@ nav{
     background-image: url(img/baner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 600px;
 }
 
 .text{
@@ -243,12 +244,135 @@ nav{
         padding: 20px;
         flex-wrap: wrap;
     }
+    .skills_bars{
+        padding: 20px 0 0 20px!important;
+    }
+    
+    .skills{
+        height: 55vh!important;
+    }
     .box{
-        font-size: 7px!important;
+        font-size: 13px!important;
     }
     .box i{
         font-size: 20px!important;
     }
+    .box{
+        width: 100%!important;
+        display: flex;
+        padding: 10px 0 10px 0;
+        align-items: center;
+        justify-content: center;
+    }  
+    .bars li{
+    height: 28px;
+    }
+    .numbers{
+        height: 60vh;
+    }
+    .work div{
+        width: 100%!important;
+    }
+    .work div img{
+        width: 20%!important;
+    }
+    .process_text{
+        font-size: 18px!important;
+    }
+    .process_text p{
+        font-size: 12px!important;
+    }
+    .work_process{
+        height: 100vh!important;
+    }
+    .video{
+        margin:auto!important;
+        width: 400px!important;
+    }
+    #play{
+        right: -3%!important;
+        top:-140px!important;
+        height:50px!important ;
+        width: 50px!important;
+    }
+    .services div{
+        width: 100%!important;
+        height: 25vh!important;
+    }
+    .clients div{
+        height: 35vh!important;
+        width: 100%!important;
+    }
+    .clients{
+        flex-direction: column!important;
+    }
+    .need-a-project{
+        height: 125vh!important;
+    }
+    .need-a-project div{
+        padding: 45px!important;
+    }
+    .need-a-project p{
+        font-size: 15px!important;
+    }
+    .need-a-project h1{
+        font-size: 33px!important;
+    }
+    .need-a-project input{
+        padding:15px!important;
+    }
+    .form form{
+        display: flex!important;
+        flex-wrap: wrap!important;    
+        justify-content: center!important;
+    }
+    .comment_height{
+        height: 150px!important;
+        width: 87%!important;
+
+    }
+    .form_title{
+        width: 87%!important;
+    }
+    .footer{
+        height: 87vh!important;
+        display: flex!important;
+        width: 100%!important;
+        flex-direction: column!important;
+        align-content: center!important;
+        align-items: center!important;
+    }
+    .footer div{
+        font-size: 10px!important;
+        width: 100%!important;
+        padding: 10px!important;
+    }
+    .text-wrapper{
+        text-align: center;
+
+    }
+    .text2{
+        padding: 0;
+    }
+    .text3{
+        width: auto;
+    }
+    .mySlides{
+        padding: 30px!important;
+    }
+    .slideshow-container{
+        top: 20%!important;
+    }
+    .dot-container{
+        top:20%!important;
+    }
+    .one, .two, .three, .four, .five{
+        background-size: 25%!important;
+    }
+    .need-a-project{
+
+    }
+
 }
 .box{
     width: 25%;
@@ -370,9 +494,10 @@ nav{
 
 .testimonials{
     height: 70vh;
-    display: flex;
     background-color: rgb(0, 200, 200);
+    
 }
+
 
 
 
@@ -464,7 +589,9 @@ nav{
 .form_comment{
     grid-column: span 2;
 }
-
+.comment_height{
+    height: 300px;
+}
 .need-a-project button{
     margin-top: 0;
 }
@@ -521,7 +648,7 @@ nav{
         position: relative;
         flex-wrap: wrap;
         z-index: 1;
-        width: 10%;
+        width: 0%!important;
         background-color: gray;
         width: auto;
 
@@ -548,14 +675,89 @@ nav{
         color: black;
         margin: 0 10px;
     }
+    .skills{
+        height: 70vh;
+    }
+    .skills_bars{
+        padding: 40px 0 0 40px;
+    }
+    .work_process{
+        height: 140vh;
+    }
+    .process_text{
+        padding-top: 60px;
+    }
+    .video{
+        margin:auto!important;
+        width: 700px;
+    }
+    #play{
+        right: -3%!important;
+        top:-40%!important;
+        height:50px!important ;
+        width: 50px!important;
+    }
+    .services div i{
+        font-size: 35px;
+        margin: auto;
+    }
+    .services div{
+        font-size: 8px;
+    }
+    .slideshow-container{
+        top: 10%;
+        width: 50%!important;
+        right: -25%!important;
+    }
+    .dot-container{
+        top: 10%;
+        width: 50%!important;
+        right: -25%!important;
+    }
+    .need-a-project h1{
+        margin: 0 0 5px 0;
+        font-size: 35px;
+    }
+    .need-a-project p{
+        font-size: 15px;
+    }
+    .need-a-project div{
+        padding:40px;
+    }
+    .need-a-project input{
+        padding:15px;
+    }
+    .need-a-project{
+        height: 135vh;
+    }
+    .comment_height{
+        height: 200px;
+    }
+    .footer div{
+        padding: 45px;
+    }
+    .footer{
+        height: 40vh;
+    }
+}
+.icon-play{
+    font-size: 100px;
 
-    
-    
-    
+}
+.video{
+    margin: 0 250px 0 250px;
+    display: flex;
+    justify-content: center;
+}
+#play {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    right: 0%;
+    top: -50%;
 }
 #play::before {
     content: attr(data-title);
-    position: absolute;
     display: none;
     right: 0;
     top: -50px;
@@ -571,3 +773,130 @@ nav{
   button:hover::before {
     display: inline-block;
   }
+
+  .w3-animate-fading {
+    animation: fading 10s infinite;
+}
+
+.w3-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 850px){
+    .footer{
+        height: 50vh;
+        font-size: 12px;
+    }
+    .text3{
+        text-align: center;
+        width: auto;
+
+    }
+    .text2{
+        padding: 0!important;
+    }
+    .text-wrapper{
+
+        text-align: center;
+    }
+}
+
+
+
+
+/*ze niby ten slider*/
+
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+    top:32%;
+    background-color: cadetblue;
+      position: relative;
+  background: #ddd;
+  width: 60%;
+  right: -20%;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+.first_slide{
+    display: block;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    position: relative;
+    top: 32%;
+    width: 60%;
+    right: -20%;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active_dot, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
