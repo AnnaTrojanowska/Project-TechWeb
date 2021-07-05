@@ -747,6 +747,15 @@ nav{
     .footer{
         height: 40vh;
     }
+    .modal-content{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .product_popup, .product_popup_img{
+        width: 100%!important;
+
+    }
+    
 }
 .icon-play{
     font-size: 100px;
